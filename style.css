@@ -484,3 +484,110 @@ text-animation span {
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
 }
+.Experiencia-item{
+    min-height: 550px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid;
+    border: rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color:white;
+    transition: 0.4s ease-in-out;
+}
+.Experiencia-item:hover{
+    border: 2px solid var(--main-color) ;
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+.Experiencia-item h2{
+    font-size: 2.8rem;
+}
+.Experiencia-item p{
+    font-size: 1.3rem;
+}
+#star{
+    color: gold;
+    font-size: 2rem;
+}
+.Contato{
+background-color: var(--bg-color);
+}
+.Contato h2{
+    margin-bottom:3rem ;
+    color: white;
+
+}
+.Contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+.Contato form input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Contato form .input-box input,.Contato form textarea {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--seconf-bg-color) ;
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+.Contato form .btn{
+    margin-top: 2rem;
+}
+.footer{
+   position: relative;
+   bottom: 0; 
+   width: 100%;
+   padding: 40px 0;
+   background-color: var(--seconf-bg-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: var(--main-color);
+    color: black;
+    box-shadow: 0 0 25px var(--main-color);
+}
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
