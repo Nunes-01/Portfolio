@@ -408,7 +408,8 @@ text-animation span {
     color: black;
 
 }
-.Serviços h2{
+
+.Serviços h2 {
     margin-bottom: 5rem;
     color: white;
 }
@@ -459,10 +460,12 @@ text-animation span {
     line-height: 1.7;
     margin: auto;
 }
-.Experiencia{
+
+.Experiencia {
     background: var(--seconf-bg-color);
 }
-.Experiencia-box{
+
+.Experiencia-box {
     background-size: cover;
     display: flex;
     align-items: center;
@@ -470,21 +473,24 @@ text-animation span {
     flex-direction: column;
 }
 
-.Experiencia .heading{
+.Experiencia .heading {
     margin-bottom: 5rem;
 }
-.Experiencia-box img{
+
+.Experiencia-box img {
     width: 15rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
 }
+
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-.Experiencia-item{
+
+.Experiencia-item {
     min-height: 550px;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
@@ -500,33 +506,40 @@ text-animation span {
     justify-content: center;
     text-align: center;
     gap: 1.5rem;
-    color:white;
+    color: white;
     transition: 0.4s ease-in-out;
 }
-.Experiencia-item:hover{
-    border: 2px solid var(--main-color) ;
+
+.Experiencia-item:hover {
+    border: 2px solid var(--main-color);
     transform: translateY(-10px) scale(1.03);
     box-shadow: 0 0 50px var(--main-color);
 }
-.Experiencia-item h2{
+
+.Experiencia-item h2 {
     font-size: 2.8rem;
 }
-.Experiencia-item p{
+
+.Experiencia-item p {
     font-size: 1.3rem;
 }
-#star{
+
+#star {
     color: gold;
     font-size: 2rem;
 }
-.Contato{
-background-color: var(--bg-color);
+
+.Contato {
+    background-color: var(--bg-color);
 }
-.Contato h2{
-    margin-bottom:3rem ;
+
+.Contato h2 {
+    margin-bottom: 3rem;
     color: white;
 
 }
-.Contato form{
+
+.Contato form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -534,38 +547,45 @@ background-color: var(--bg-color);
     margin: 5rem auto;
     text-align: center;
 }
-.Contato form input-box{
+
+.Contato form input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.Contato form .input-box input, .Contato form textarea {
+
+.Contato form .input-box input,
+.Contato form textarea {
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
     color: var(--text-color);
-    background-color: var(--seconf-bg-color) ;
+    background-color: var(--seconf-bg-color);
     border-radius: 2rem;
     border: 2px solid var(--main-color);
     margin: 1.5rem 0;
     resize: none;
 }
-.Contato form .btn{
+
+.Contato form .btn {
     margin-top: 2rem;
 }
-.footer{
-   position: relative;
-   bottom: 0; 
-   width: 100%;
-   padding: 40px 0;
-   background-color: var(--seconf-bg-color);
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--seconf-bg-color);
 }
-.footer .social{
-    text-align:center;
+
+.footer .social {
+    text-align: center;
     padding-bottom: 25px;
     color: var(--main-color);
 }
-.footer .social a{
+
+.footer .social a {
     font-size: 25px;
     color: var(--main-color);
     border: 2px solid var(--main-color);
@@ -578,13 +598,15 @@ background-color: var(--bg-color);
     margin: 0 10px;
     transition: 0.3s ease-in-out;
 }
-.footer .social a:hover{
+
+.footer .social a:hover {
     transform: scale(1.2)translateY(-10px);
     background-color: var(--main-color);
     color: black;
     box-shadow: 0 0 25px var(--main-color);
 }
-footer ul{
+
+footer ul {
     margin-top: 0;
     padding: 0;
     font-size: 18px;
@@ -601,21 +623,143 @@ footer ul li {
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: white;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     border-bottom: 3px solid var(--main-color);
 }
-.footer ul li{
+
+.footer ul li {
     display: inline-block;
     padding: 0 15px;
 }
-.footer .copyrigth{
+
+.footer .copyrigth {
     margin-top: 50px;
     text-align: center;
     font-size: 14px;
     color: white;
+}
+
+@media (max-width:1285px) {
+    html {
+        font-size: 55%;
+    }
+
+    .Serviços-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media(max-width: 991px) {
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-pronto {
+        left: 0;
+    }
+
+    .Serviços {
+        padding-bottom: 7rem;
+    }
+
+    .Experiencia .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Contato form {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width:895px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(5, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+
+    .navbar .active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+
+    .Inicio {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+
+    .Inicio-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .Inicio-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+
+    .Inicio-content p {
+        max: width 600px;
+        margin: 0 auto;
+    }
+
+    .Inicio-img img {
+        width: 56vw;
+    }
+
+    .Serviços h2 {
+        margin-bottom: 3rem;
+    }
+
+    .Serviços-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
